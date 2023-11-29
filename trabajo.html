@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo</title>
     <link rel="stylesheet" href="trabajo.css">
+    <script src="html2canvas.js"></script>
+    <script src="jsPdf.js"></script>
 </head>
 <body>
     <header class="hero">
@@ -43,11 +45,65 @@
 
     <section class="comparative-container">
         <h1 class="hero__title"> Planifica tus viajes de alta calidad</h1>
-        <img src="CUADRO.png" alt="">
+        
+
+        <div class="cuadro">
+            <h1>Cuadro Comparativo</h1>
+  <table id="comparativo">
+    <thead>
+      <tr>
+        <th>Aspecto</th>
+        <th>React</th>
+        <th>JSX</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lenguaje</td>
+        <td>Es una biblioteca de JavaScript utilizada para construir interfaces de usuario. Proporciona una estructura para desarrollar aplicaciones web interactivas de manera eficiente.
+        </td>
+        <td>es una extensión de JavaScript que permite escribir HTML dentro de archivos de JavaScript. Aunque parece una combinación de HTML y JavaScript, en realidad se transforma a llamadas de funciones de React.
+        </td>
+      </tr>
+      <tr>
+        <td>Sintaxis</td>
+        <td>Utiliza componentes que representan partes independientes y reutilizables de la interfaz. Trabaja con el Virtual DOM para actualizar solo los componentes modificados, lo que mejora el rendimiento</td>
+        <td>Facilita la escritura de código más legible y eficiente para la construcción de interfaces de usuario en React. Permite la mezcla de lógica y marcado visual dentro del mismo archivo.
+        </td>
+      </tr>
+      <tr>
+        <td>Finalidad</td>
+        <td>Se enfoca en la construcción de aplicaciones web interactivas y de una sola página (Single Page Applications, SPAs). Facilita la creación de interfaces de usuario complejas y dinámicas.
+        </td>
+        <td>simplifica la creación de componentes en React al proporcionar una sintaxis que se asemeja a HTML. Mejora la legibilidad y la eficiencia al escribir código para interfaces de usuario.
+        </td>
+      </tr>
+      <tr>
+        <td>Uso</td>
+        <td>React se emplea comúnmente en el desarrollo de aplicaciones web modernas. Permite una estructura modular y una gestión eficiente del estado de la aplicación.
+        </td>
+        <td>se utiliza comúnmente en aplicaciones desarrolladas con React para definir la estructura y el aspecto visual de los componentes.
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+<br>
+ <div class="but">
+    <form action="index.html" method="input">
+        <input class="buton" type="submit" value="volver">
+      </form>
+ </div>
+
+<br>
+        </div>
 
     </section>
 
-    <section class="comparative-container">
+    <section class="comparative" id="pdf">
         <div class="comparative-container">
             <h2>
                 ¿Qué son clases en React?
@@ -55,9 +111,11 @@
             <p>
                 En React, las clases son un tipo de componente que se define como una clase de JavaScript que extiende la clase React.Component. Los componentes de clase tienen acceso a una serie de métodos y propiedades que les permiten controlar su ciclo de vida, manejar eventos y acceder al estado del componente.
             </p>
+
+            <button onclick="generatePDF()">descargar PDF</button>
         </div>
     
-        <div class="comparative-container"">
+        <div class="comparative-container ">
            
                 <h2>
                     Principales eventos de React
@@ -108,8 +166,26 @@
                 <p> La Dorada- Caldas</p>
             </div>
         </div>
-        <h2 class="titulo-final"> &copy; Lenguajes de programacion</h2>
-
     </footer>
+       <div class="ultimo">
+        <h4 class="titulo-final"> &copy; Lenguajes de programacion</h4>
+       </div>
+    
+
+    <script type="text/javascript">
+    function generatePDF() {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF('l', 'px', [1920, 1080]);
+        let pdfjs = document.querySelector('#pdf');
+    
+        doc.html(pdfjs, {
+        callback: function (doc) {
+        doc.save("newpdf.pdf");
+         },
+         x: 12,
+         y: 12
+         });
+     }
+    </script>
 </body>
 </html>

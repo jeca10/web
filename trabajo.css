@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  background: #38093f5a;
 }
 
 .container{
@@ -125,6 +126,7 @@ body{
 h1{
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 img{
@@ -137,9 +139,65 @@ img{
   place-items: center;
 }
 
+/* Cuadro comparativo */
+
+.cuadro{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td{
+  border: 1px solid #4f4b4b;
+  padding: 8px;
+}
+
+.but{
+  text-align: center;
+}
+.buton{
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+
+}
 
 
 
+   /* botom */
+  
+#descargarBtn {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* comparative */
+
+.comparative-container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 /* informacion final*/
@@ -178,5 +236,11 @@ footer{
   text-align: center;
   font-size: 24px;
   margin: 20px 0 0 0;
-  color: #000000;
+  color: #0b0a0a;
 }
+
+.ultimo{
+  background: #38093f5a;
+  color: #fbf5f5;
+}
+
