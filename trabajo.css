@@ -82,9 +82,9 @@ body{
   width: 30;
 }
 
-.nav__close{
-  /* display: var(--show, none); */
-}
+/* .nav__close{
+  display: var(--show, none);
+} */
 
 /* HERO CONTAINER */
 .hero::before{
@@ -236,7 +236,7 @@ footer{
   text-align: center;
   font-size: 24px;
   margin: 20px 0 0 0;
-  color: #0b0a0a;
+  color: #434040;
 }
 
 .ultimo{
