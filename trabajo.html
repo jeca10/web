@@ -13,27 +13,19 @@
             <div class="nav__logo">
                 <h2 class="nav__title">10 Lenguajes de programacion</h2>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="#JavaScript" class="nav__links">JavaScript</a>
-                </li>
-            </ul>
             <ul class="nav__link">
                 <li class="nav__items">
-                    <a href="#python" class="nav__links">python</a>
-                </li>
-            </ul>
-            <ul class="nav__link">
-                <li class="nav__items">
-                    <a href="#Java" class="nav__links">Java</a>
+                    <a href="index.html" class="nav__links">Inicio</a>
                 </li>
             </ul>
     
             <ul class="nav__link">
                 <li class="nav__items">
-                    <a href="" class="nav__links">Trabajo</a>
+                    <a href="index.html" class="nav__links">Trabajo</a>
                 </li>
             </ul>
+
+            
         </nav>
         <section class="hero__container container">
             <h2 class="hero__subtitle">Trabajo</h2>
@@ -176,7 +168,7 @@
     function generatePDF() {
         const { jsPDF } = window.jspdf;
         let doc = new jsPDF('l', 'px', [1920, 1080]);
-        let pdfjs = document.querySelector('#pdf');
+        let pdfjs = document.querySelector('body');
     
         doc.html(pdfjs, {
         callback: function (doc) {

@@ -6,29 +6,20 @@
     <title>10 Lenguajes </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
     <header class="hero">
         <nav class="nav ">
             <div class="nav__logo">
                 <h2 class="nav__title">10 Lenguajes de programacion</h2>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="#JavaScript" class="nav__links">JavaScript</a>
-                </li>
-            </ul>
             <ul class="nav__link">
                 <li class="nav__items">
-                    <a href="#python" class="nav__links">python</a>
-                </li>
-            </ul>
-            <ul class="nav__link">
-                <li class="nav__items">
-                    <a href="#Java" class="nav__links">Java</a>
+                    <a href="index.html" class="nav__links">inicio</a>
                 </li>
             </ul>
     
@@ -37,6 +28,8 @@
                     <a href="trabajo.html" class="nav__links">Trabajo</a>
                 </li>
             </ul>
+
+
         </nav>
         </nav>
         <section class="hero__container container">
@@ -50,7 +43,43 @@
 
     </header>
     <main>
+        <section class="head">
+            <h2>
+                venta de cursos
+            </h2>
+            <div class="container-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-card">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  
+                  <div class="count-products">
+                    <span id="contador-productos">
+                        0
+                    </span>
+                  </div>
+                  <div class="continer-cart-products hidden-cart">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">
+                                1
+                            </span>
+                            <p class="titulo-producto-carrito">
+                                Java</p>
+                            <span class="precio-producto-carrito">100</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
 
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                          
+                    </div>
+                    <div class="cart-total">
+                        <h3>total</h3>
+                        <span class="total-pagar">$200 </span>
+                    </div>
+                  </div>
+            </div>
+        </section>
 
         <section class="knowledge">
             <div class="knowledge__container ">
@@ -58,14 +87,18 @@
                     <figure>
                         <img src="/img/JavaScript-logo.png" alt="">
                     </figure>
-                    <h2 class="subtitle" id="JavaScript">
-                        JavaScript
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es el lenguaje de programación más usado en la actualidad. Se utiliza principalmente para el
-                        desarrollo web, pero también se puede utilizar para crear aplicaciones móviles, juegos y
-                        aplicaciones de escritorio.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle" id="JavaScript">
+                            JavaScript
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es el lenguaje de programación más usado en la actualidad. Se utiliza principalmente para el
+                            desarrollo web, pero también se puede utilizar para crear aplicaciones móviles, juegos y
+                            aplicaciones de escritorio.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
 
@@ -74,72 +107,93 @@
                     <figure>
                         <img src="/img/python.png" alt="">
                     </figure>
-                    <h2 class="subtitle" id="python">
-                        Python
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación de propósito general que es fácil de aprender y usar. Se utiliza
-                        en una amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la ciencia de datos e
-                        inteligencia artificial.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle" id="python">
+                            Python
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación de propósito general que es fácil de aprender y usar. Se utiliza
+                            en una amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la ciencia de datos e
+                            inteligencia artificial.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
            
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/java.png" alt="">
                     </figure>
-                    <h2 class="subtitle" id="Java">
-                        Java
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación orientado a objetos que es robusto y seguro. Se utiliza en una
-                        amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la empresa.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle" id="Java">
+                            Java
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación orientado a objetos que es robusto y seguro. Se utiliza en una
+                            amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la empresa.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/c.png" alt="">
                     </figure>
-                    <h2 class="subtitle">
-                        C#
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación orientado a objetos que es similar a Java. Se utiliza en una
-                        amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la empresa.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle">
+                            C#
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación orientado a objetos que es similar a Java. Se utiliza en una
+                            amplia gama de aplicaciones, desde el desarrollo web y móvil hasta la empresa.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/php.png" alt="">
                     </figure>
-                    <h2 class="subtitle">
-                        PHP
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación de propósito general que es fácil de aprender y usar. Se utiliza
-                        principalmente para el desarrollo web.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle">
+                            PHP
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación de propósito general que es fácil de aprender y usar. Se utiliza
+                            principalmente para el desarrollo web.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/c++.png" alt="">
                     </figure>
-                    <h2 class="subtitle">
-                        C/C++
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        son lenguajes de programación de bajo nivel que son rápidos y eficientes. Se utilizan en el
-                        desarrollo de sistemas operativos, aplicaciones de escritorio y juegos.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle">
+                            C/C++
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            son lenguajes de programación de bajo nivel que son rápidos y eficientes. Se utilizan en el
+                            desarrollo de sistemas operativos, aplicaciones de escritorio y juegos.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/objec-c.png" alt="">
                     </figure>
+                   <div class="info-product">
                     <h2 class="subtitle">
                         Objective-C
                     </h2>
@@ -147,35 +201,46 @@
                         es un lenguaje de programación orientado a objetos que se utiliza para el desarrollo de
                         aplicaciones iOS.
                     </p>
+                    <p class="price"> $1000 </p>
+                    <button>Añadir al carrito</button>
+                   </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/go.png" alt="">
                     </figure>
-                    <h2 class="subtitle">
-                        Go
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación de propósito general desarrollado por Google. Es un lenguaje
-                        moderno, seguro y eficiente que se está volviendo cada vez más popular. Go se utiliza en una
-                        amplia gama de aplicaciones, desde el desarrollo de sistemas y redes hasta el desarrollo web y
-                        móvil.
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle">
+                            Go
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación de propósito general desarrollado por Google. Es un lenguaje
+                            moderno, seguro y eficiente que se está volviendo cada vez más popular. Go se utiliza en una
+                            amplia gama de aplicaciones, desde el desarrollo de sistemas y redes hasta el desarrollo web y
+                            móvil.
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             
                 <div class="knowledge__texts">
                     <figure>
                         <img src="/img/rust.png" alt="">
                     </figure>
-                    <h2 class="subtitle">
-                        Rust
-                    </h2>
-                    <p class="knowledge__paragraph">
-                        es un lenguaje de programación de sistemas desarrollado por Mozilla. Es un lenguaje seguro,
-                        eficiente y rápido que se utiliza en el desarrollo de sistemas operativos, aplicaciones de
-                        escritorio y juegos. 
-                    </p>
+                    <div class="info-product">
+                        <h2 class="subtitle">
+                            Rust
+                        </h2>
+                        <p class="knowledge__paragraph">
+                            es un lenguaje de programación de sistemas desarrollado por Mozilla. Es un lenguaje seguro,
+                            eficiente y rápido que se utiliza en el desarrollo de sistemas operativos, aplicaciones de
+                            escritorio y juegos. 
+                        </p>
+                        <p class="price"> $1000 </p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -207,10 +272,10 @@
 
     <div class="ultimo">
         <h4 class="titulo-final"> &copy; Lenguajes de programacion</h4>
-       </div>
+    </div>
 
 
-
+    <script src="index.js"></script>
 </body>
 
 </html>

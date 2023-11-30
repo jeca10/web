@@ -23,7 +23,7 @@ body{
   height: 100vh;
   min-height: 600px;
   /* max-width: 800px; */
-  /* position: relative; */
+  position: relative;
   display: grid;
   grid-template-rows: 100px 1fr;
   color: #fbf5f5;
@@ -37,10 +37,9 @@ body{
   height: 100%;
   width: 100%;
   grid-row: 1/2;
-
   display: flex;
   justify-content: space-between;
-/*   display: flex; */
+
 }
 
 

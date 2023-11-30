@@ -23,7 +23,7 @@ body{
   height: 100vh;
   min-height: 600px;
   /* max-width: 800px; */
-  /* position: relative; */
+  position: relative;
   display: grid;
   grid-template-rows: 100px 1fr;
   color: #fbf5f5;
@@ -37,10 +37,9 @@ body{
   height: 100%;
   width: 100%;
   grid-row: 1/2;
-
   display: flex;
   justify-content: space-between;
-/*   display: flex; */
+
 }
 
 
@@ -125,9 +124,131 @@ body{
 
 main{
   margin: 3em;
-  background: #38093f5a;
 }
 
+/* section head */
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  
+  font-family: 'Playfair Display', serif;
+  color: #26071c;
+}
+
+
+
+.icon-card{
+  width: 40px;
+  height: 40px;
+  justify-content: space-around;
+  
+  stroke: #000000;
+}
+
+.icon-card:hover{
+  cursor: pointer;
+}
+
+.container-icons{
+  position: relative;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.continer-cart-products{
+  position: absolute;
+  top: 5px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgb(0, 0, 0,0.20);
+  border-radius: 10px;
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  /* linea */
+  border-bottom: 1px solid rgb(0, 0, 0,0.20);
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+.precio-producto-carrito{
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 10px;
+
+}
+.cantidad-producto-carrito{
+  font-weight: 400px;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 ;
+  gap: 20px;
+  
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+.hidden-cart{
+  display: none;
+}
 /* knowledge */
 
 /* .knowledge {
@@ -152,12 +273,11 @@ main{
 .knowledge__texts{
   border-radius: 10px;
   display: grid;
-  height: 250px;
+  height: 300px;
+  /* width: 600px; */
 }
 
-.knowledge__texts:hover{
-  box-shadow: 10px 20px 25px 10px #26071c;
-}
+
 
 .knowledge__texts img{
   width: 100px;
@@ -168,12 +288,51 @@ main{
   transition: all .4s;
 }
 
+.knowledge__texts figure{
+  overflow: hidden;
+}
+
+.knowledge__texts:hover {
+  box-shadow: 10px 20px 25px 10px #26071c;
+}
+
 
 .knowledge__paragraph{
   overflow: hidden;
   margin: 10px;
   
 }
+
+.info-product{
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #000000;
+  color: #fff;
+  pad: 15px 10px;
+  cursor: pointer;
+  width: 149px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+button{
+  align-items: center;
+  align-self: end;
+  border-radius: 10px;
+}
+
 
 
 
